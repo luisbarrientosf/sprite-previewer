@@ -1,0 +1,89 @@
+.sprite-card {
+  background: rgba(30, 27, 75, 0.6);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.sprite-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
+}
+
+.sprite-card-image {
+  background: rgba(15, 15, 40, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  aspect-ratio: 1;
+}
+
+.sprite-card-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.sprite-card:hover .sprite-card-image img {
+  transform: scale(1.12);
+}
+
+.sprite-card-info {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.sprite-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.sprite-card-category {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-self: flex-start;
+}
+
+.cat-enemy    { background: rgba(239, 68, 68, 0.2);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+.cat-character{ background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
+.cat-item     { background: rgba(234, 179, 8, 0.2);  color: #facc15; border: 1px solid rgba(234,179,8,0.3); }
+.cat-object   { background: rgba(34, 197, 94, 0.2);  color: #4ade80; border: 1px solid rgba(34,197,94,0.3); }
+
+.sprite-card-desc {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sprite-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: #6d7fa9;
+  background: rgba(100, 116, 169, 0.12);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+}
