@@ -1,0 +1,21 @@
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.upload-label {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-label input {
+  display: none;
+}

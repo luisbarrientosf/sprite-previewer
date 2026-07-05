@@ -3,6 +3,7 @@ import { Navbar } from './presentation/components/Navbar';
 import { HomePage } from './presentation/pages/HomePage';
 import { ListPage } from './presentation/pages/ListPage';
 import { PreviewPage } from './presentation/pages/PreviewPage';
+import { SpritesheetsPage } from './presentation/pages/SpritesheetsPage';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/list" element={<ListPage />} />
         <Route path="/preview" element={<PreviewPage />} />
+        <Route path="/spritesheets" element={<SpritesheetsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

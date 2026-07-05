@@ -13,6 +13,9 @@ export function Navbar() {
         <Link to="/list" className={pathname === '/list' ? 'active' : ''}>
           Gallery
         </Link>
+        <Link to="/spritesheets" className={pathname === '/spritesheets' ? 'active' : ''}>
+          Spritesheets
+        </Link>
         <Link to="/preview" className={pathname.startsWith('/preview') ? 'active' : ''}>
           Preview
         </Link>

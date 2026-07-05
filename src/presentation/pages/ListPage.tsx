@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SpriteCard } from '../components/SpriteCard';
 import { useSprites } from '../hooks/useSprites';
 import './ListPage.css';
+import TextInput from '../components/TextInput/TextInput';
 
 export function ListPage() {
   const { sprites, categories } = useSprites();
@@ -26,7 +27,7 @@ export function ListPage() {
       </header>
 
       <div className="list-controls">
-        <input
+        <TextInput
           type="search"
           className="list-search"
           placeholder="Search sprites..."
