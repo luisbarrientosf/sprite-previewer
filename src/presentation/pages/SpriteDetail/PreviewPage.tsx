@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
-import { useSpriteById, useSprites } from '../hooks/useSprites';
+import { useSpriteById, useSprites } from '../../hooks/useSprites';
 import './PreviewPage.css';
 
 export function PreviewPage() {

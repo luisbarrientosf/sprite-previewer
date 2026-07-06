@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { SpriteCard } from '../components/SpriteCard';
-import { useSprites } from '../hooks/useSprites';
+import { SpriteCard } from '@components/SpriteCard/SpriteCard';
+import { useSprites } from '@hooks/useSprites';
+import TextInput from '@components/TextInput/TextInput';
 import './ListPage.css';
-import TextInput from '../components/TextInput/TextInput';
 
 export function ListPage() {
   const { sprites, categories } = useSprites();

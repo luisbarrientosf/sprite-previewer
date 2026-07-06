@@ -1,8 +1,8 @@
 import React, { useCallback, useRef, useState } from 'react';
 import JSZip from 'jszip';
 import './SpritesheetsPage.css';
-import TextInput from '../components/TextInput/TextInput';
-import DragNDropFileUploader from '../components/DragNDropFileUploader/DragNDropFileUploader';
+import TextInput from '@components/TextInput/TextInput';
+import DragNDropFileUploader from '@components/DragNDropFileUploader/DragNDropFileUploader';
 
 export function SpritesheetsPage() {
   const [fileUrl, setFileUrl] = useState<string | null>(null);

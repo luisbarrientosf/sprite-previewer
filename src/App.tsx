@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { Navbar } from './presentation/components/Navbar';
-import { HomePage } from './presentation/pages/HomePage';
-import { ListPage } from './presentation/pages/ListPage';
-import { PreviewPage } from './presentation/pages/PreviewPage';
-import { SpritesheetsPage } from './presentation/pages/SpritesheetsPage';
+import { Navbar } from './presentation/components/Navbar/Navbar';
+import { HomePage } from './presentation/pages/Home/HomePage';
+import { ListPage } from './presentation/pages/SpriteList/ListPage';
+import { PreviewPage } from './presentation/pages/SpriteDetail/PreviewPage';
+import { SpritesheetsPage } from './presentation/pages/SpritesheetCutter/SpritesheetsPage';
 
 export default function App() {
   return (
